@@ -23,6 +23,7 @@ export class VideoService {
   public getVideo(videoId: number): Observable<Video>{
     return this.http.get<Video>(this.videoURL + videoId);
   } 
+  // public getAllVideo()
 
 
 }

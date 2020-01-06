@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'home', component: HomeComponent },
   { path: 'upload', component: VideoFormComponent},
-  { path: 'video-page', component: VideoPageComponent}
+  { path: 'video-page/:videoId', component: VideoPageComponent}
 
 ];
 
