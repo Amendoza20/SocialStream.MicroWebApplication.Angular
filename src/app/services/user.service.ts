@@ -14,7 +14,7 @@ export class UserService {
   }
 
   singup(user: User) {
-    return this.http.post('/server/signup', user);
+    return this.http.post('/signup', user);
   }
 
   login(login: Login): Observable<boolean> {
@@ -34,8 +34,7 @@ export class UserService {
     this.localStorageService.clear('username');
   }
   
-
-  // findAll(){
-  //   return this.http.get<User[]>('/server/users');
-  // }
+  findAll(){
+    return this.http.get<User[]>('/server/users');
+  }
 }
