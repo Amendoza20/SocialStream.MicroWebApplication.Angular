@@ -14,8 +14,7 @@ export class SignupComponent implements OnInit {
   signupForm: FormGroup;
   user: User;
 
-  constructor(private formBuilder: FormBuilder, private userService: UserService,
-     private router: Router) {
+  constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router) {
 
     this.signupForm = this.formBuilder.group({
       username: '',
@@ -39,7 +38,7 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(){
+  onSubmit() {
     this.user.username = this.signupForm.get('username').value;
     this.user.firstName = this.signupForm.get('firstName').value;
     this.user.lastName = this.signupForm.get('lastName').value;
@@ -49,7 +48,7 @@ export class SignupComponent implements OnInit {
 
     this.userService.singup(this.user).subscribe(data => {
       console.log('User created');
-      alert("User created successfully.");
+      alert('User created successfully.');
       this.router.navigateByUrl('/login');
     }, error => {
       console.log('register failed'); 

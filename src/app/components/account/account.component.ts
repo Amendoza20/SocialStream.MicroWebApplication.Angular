@@ -19,6 +19,6 @@ export class AccountComponent implements OnInit {
       .subscribe( data => {
         this.users = data;
       });
-  };
+  }
 
 }

@@ -7,5 +7,5 @@ export class Comment {
   reply: string;
   userId: number;
   createDate: Date;
-  video: Video; 
+  video: Video;
 }
