@@ -12,11 +12,11 @@ import { VideoPageComponent } from './video-page/video-page.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'upload', component: VideoFormComponent},
-  { path: 'homepage', component: HomepageComponent},
   { path: 'video-page/:videoId', component: VideoPageComponent},
-  { path: 'users', component: AccountComponent },
+  { path: 'homepage', component: HomepageComponent},
+  { path: 'account', component: AccountComponent },
 ];
 
 @NgModule({
